@@ -1,0 +1,265 @@
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: 'Inclusive Sans', sans-serif;
+  --main-color: white;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: white;
+  background: #000;
+
+}
+
+.container {
+  color: aliceblue;
+  padding: 5px ;
+  scroll-behavior: smooth;
+
+}
+
+p , h1 , a {
+  cursor: default !important;
+}
+
+.loading-page video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.2;
+  z-index: 1;
+
+}
+.loading-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.loading-page img {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  height: auto;
+  width: 200px;
+  background: transparent;
+  background-color: rgba(0, 0, 0, .5);
+  mix-blend-mode: difference;
+  opacity: 1;
+}
+
+.loading-page p {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  font-size: 30px;
+  opacity: 0.9;
+}
+
+.loading-page p.load {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-top: 300px;
+  font-size: 20px;
+  opacity: 0.9;
+
+}
+
+
+#header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(assests/background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 5em 1em #000;
+  opacity: 0.9;
+}
+
+.logo {
+  width: 60px;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+nav ul p {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+
+}
+
+nav ul p a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+.content-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.container .header-text {
+  background-color: transparent;
+}
+
+.header-text{
+  margin-top: 20%;
+  font-size: 20px;
+  width: 50%;
+  padding-left: 20px;
+  padding: 20px;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.header-text p {
+  font-size: 30px;
+}
+.header-text p span{
+  color: rgb(190, 173, 14);
+
+}
+
+.right-content {
+  background: none;
+}
+
+.right-content button {
+  position: relative;
+  display: flex;
+  float: right;
+  cursor: pointer;
+  padding: 20px;
+  margin-right: 100px;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  background:  rgb(255, 232, 21);
+  border-radius: 5px;
+  color: #000;
+  gap: 8px;
+
+}
+
+.right-content button:hover {
+  background: rgb(234, 212, 20);
+  box-shadow: rgba(191, 188, 136, 0.48) 6px 2px 16px 0px, rgba(254, 244, 168, 0.8) -6px -2px 16px 0px;
+}
+
+.right-content button i {
+  color: #000;
+  background: none;
+}
+
+
+
+/*---about---*/
+
+
+
+.full-content-about {
+  margin: 20px ;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+
+}
+
+.container h1 {
+  margin: 10px;
+  font-size: 50px;
+  padding: 20px;
+
+}
+
+.left-content-about {
+  height: 100%;
+  width: 48%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding-left: 20px;
+}
+
+.left-content-about iframe {
+  width: 500px;
+  height: 281px;
+  box-shadow: rgba(191, 188, 136, 0.48) 6px 2px 16px 0px, rgba(254, 244, 168, 0.8) -6px -2px 16px 0px;
+  border-radius: 5px;
+}
+
+.right-content-about {
+  height: 100%;
+  width: 50%;
+  margin-top: 20px;
+  padding: 10px;
+
+}
+
+.right-content-about h2 {
+  padding: 10px;
+  padding-bottom: 20px;
+
+}
+
+.right-content-about p {
+  padding: 10px;
+}
+
+.bottom-content-about {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.bottom-content-about h2 {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.bottom-content-about p {
+  padding: 10px;
+}
+
+
+
+
+
+/*--reveal---*/
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 3s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}

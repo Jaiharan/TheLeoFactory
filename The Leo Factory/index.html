@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Leo Company</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4d409ec8f1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!--Start-->
+  <div class="loading-page">
+    <video autoplay loop muted plays-inline >
+      <source src="assests/Leo-badass.mp4" type="video/mp4">
+    </video>
+    <img src="assests/leo-title.png" alt="leo-title">
+    <p>The Leo Factory</p>
+    <p class="load">Loading...</p>
+  </div>
+
+  <!--header-->
+  <header class="header" id="header">
+    <div class="container">
+      
+      <nav class="navbar">
+        <div class="content-left">
+          <img src="assests/leo-title.png" class="logo">
+          <p>The Leo Factory</p>
+        </div>
+        <ul>
+          <p><a href="#home">Home</a></p>
+          <p><a href="#about">About</a></p>
+          <p><a href="#products">Products</a></p>
+          <p><a href="#feedbacks">Feedbacks</a></p>
+          <p><a href="#contact">Contact</a></p>
+        </ul>
+      </nav>
+
+      
+    </div>
+    <div class="header-text">
+      <h1>The Leo Factory</h1>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;Embrace the delicious of <span>Choconess</span>🍫</p>
+   
+    </div>
+
+    <div class="right-content">
+      <button><i class="fa-solid fa-bag-shopping"></i>View Products</button>
+    </div>
+  </header>
+<!-----------about-------------->
+ <section class="about reveal" id="about">
+  <div class="container">
+    <h1>About this page</h1>
+    <div class="full-content-about">
+     
+      <div class="left-content-about">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qN3wfuPYTI4?si=9d8GJUncvnIB_K1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="right-content-about">
+        <h2>Welcome to "The Leo Factory" - Where Sweetness Meets Cinematic Excellence!</h2>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indulge your sweet tooth and immerse yourself in the world of "Leo," the blockbuster movie sensation starring the charismatic South Indian actor, Thalapathy Vijay. At "Leo's Chocolate Haven," we bring you a unique blend of cinematic magic and delectable chocolates that will leave you craving for. <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"The Leo Factory" isn't just a store; it's a celebration of cinematic excellence and the joy of chocolate. We invite you to experience the magic of Thalapathy Vijay's "Leo" and indulge in the finest chocolates while you're at it.</p>
+      </div>
+      <div class="bottom-content-about">
+        <h2> Our Tempting Selection:</h2>
+        <p><h3>Chocolate Bliss:</h3>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Explore a handpicked assortment of chocolates that promise to delight your taste buds. From velvety truffles to crunchy pralines and everything in between, our chocolates are carefully curated to offer the finest flavors.
+
+           <br><br><h3> "Leo" Inspired Collection:</h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step into the enchanting world of "Leo" with our exclusive "Leo" inspired chocolate collection. Each chocolate is crafted to reflect the essence of the movie, making it a must-have for fans and cinephiles alike.</p>
+
+            <br><br><br><h2>Why Choose Us:</h2>
+
+              <p><h3>Quality Assurance:</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We take pride in sourcing chocolates from the most reputable chocolatiers, ensuring that every bite is an experience worth savoring.
+
+                <br><br><h3>Seamless Shopping:</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our user-friendly website makes it a breeze to browse, select, and order your favorite chocolates. We've designed it to be as enjoyable as watching "Leo" on the big screen!
+
+                <br><br><h3>Fast and Reliable Delivery:</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We understand your craving for chocolate can't wait. Rest assured, we'll deliver your chocolaty delights swiftly and in perfect condition.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+ </section>
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+ integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="script.js"></script>
+ <script type="text/javascript">
+  window.addEventListener('scroll', reveal);
+
+  function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+     for(var i=0; i < reveals.length; i++){
+
+     var windowheight = window.innerHeight;
+     var revealtop = reveals[i].getBoundingClientRect().top;
+     var revealpoint = 150;
+
+      if(revealtop < windowheight - revealpoint){
+      reveals[i].classList.add('active');
+     }
+     else{
+       reveals[i].classList.remove('active')
+      }
+
+    }
+   };
+ </script>
+</body>
+</html>
