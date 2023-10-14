@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <script src="https://kit.fontawesome.com/4d409ec8f1.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -49,7 +50,7 @@
     </div>
 
     <div class="right-content">
-      <button><i class="fa-solid fa-bag-shopping"></i>View Products</button>
+      <button><i class="fa-solid fa-bag-shopping"></i><a href="#products">View Products</a></button>
     </div>
   </header>
 <!-----------about-------------->
@@ -84,33 +85,166 @@
     
   </div>
  </section>
+ <!--Products-->
+ <section class="products reveal" id="products">
+  <div class="container">
+    <div class="container-top">
+      <header>
+        <h1>Our Products</h1>
+        <div class="shopping">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="quantity">0</span>
+        </div>
+      </header>
+
+      <div class="list"></div>
+    </div>
+    <div class="card">
+      <h1>Card</h1>
+      <ul class="listCard"></ul>
+      <div class="checkOut">
+        <div class="total">0</div>
+        <div class="closeShopping">Close Tab</div>
+      </div>
+    </div>
+  </div>
+    
+ </section>
+ <!--Feedbacks-->
+
+ <section class="feedbacks reveal" id="feedbacks">
+  <div class="container">
+    <h3 class="sub-heading"> customer's review </h3>
+    <h1 class="heading"> What they say </h1>
+
+    <div class="swiper-container feedback-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+            <div class="user-info">
+              <h3>John deo</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat
+            consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus
+            voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam
+            Ipsum, magni.</p>
+        </div>
+        <div class="swiper-slide slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+            <div class="user-info">
+              <h3>Victoria</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat
+            consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus
+            voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam
+            Ipsum, magni.</p>
+        </div>
+        <div class="swiper-slide slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+            <div class="user-info">
+              <h3>Alex harmoxi</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat
+            consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus
+            voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam
+            Ipsum, magni.</p>
+        </div>
+        <div class="swiper-slide slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+            <div class="user-info">
+              <h3>Iman Gadzi</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat
+            consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus
+            voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam
+            Ipsum, magni.</p>
+        </div>
+        <div class="swiper-slide slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+            <div class="user-info">
+              <h3>Peter</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat
+            consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus
+            voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam
+            Ipsum, magni.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!--contact&footer-->
+ <section class="contact reveal" id="contact">
+  <div class="container">
+    <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>theleofactory@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>0123456789</p>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="copyright">
+          <p>Copyright © Jaiharan. </p>
+        </div>
+  </div>
+ </section>
 
 
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
  integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+
  <script src="script.js"></script>
- <script type="text/javascript">
-  window.addEventListener('scroll', reveal);
 
-  function reveal() {
-    var reveals = document.querySelectorAll('.reveal');
-
-     for(var i=0; i < reveals.length; i++){
-
-     var windowheight = window.innerHeight;
-     var revealtop = reveals[i].getBoundingClientRect().top;
-     var revealpoint = 150;
-
-      if(revealtop < windowheight - revealpoint){
-      reveals[i].classList.add('active');
-     }
-     else{
-       reveals[i].classList.remove('active')
-      }
-
-    }
-   };
- </script>
 </body>
 </html>
